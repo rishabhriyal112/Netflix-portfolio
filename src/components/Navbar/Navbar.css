@@ -1,0 +1,132 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 2rem;
+  background: linear-gradient(to right, #0f0f0f 0%, #400000 50%, #0f0f0f 100%);
+  font-family: 'Times New Roman', serif;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-img {
+  margin-right: 1rem;
+}
+
+.nav-img img {
+  height: 50px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 0.3rem 0.6rem;
+}
+
+.nav-menu li a:hover {
+  color: #e50914;
+  transform: translateY(-2px);
+}
+
+.nav-menu li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  margin-left: auto;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* ===================== Responsive Styles ===================== */
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 1.5rem;
+  }
+
+  .nav-img img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-menu.show {
+    max-height: 400px;
+    padding: 1rem 0;
+  }
+
+  .nav-menu li {
+    margin: 0.75rem 0;
+  }
+
+  .nav-menu li a {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-img img {
+    height: 35px;
+  }
+
+  .nav-menu li a {
+    font-size: 1rem;
+  }
+}

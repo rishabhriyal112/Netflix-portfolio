@@ -1,0 +1,50 @@
+.connect-section {
+  background: linear-gradient(to right, #0f0f0f 0%, #400000 50%, #0f0f0f 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.connect-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.connect-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #b0b0b0;
+}
+
+.connect-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.connect-card {
+  background-color: #16181c;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  width: 240px;
+  text-align: center;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: white;
+}
+
+.connect-card:hover {
+  transform: scale(1.05);
+}
+
+.connect-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.green .connect-icon { color: #00c674; }
+.red .connect-icon { color: #f24b4b; }
+.blue .connect-icon { color: #4b70f2; }
+.dark-red .connect-icon { color: #b34242; }
