@@ -1,6 +1,6 @@
 import React from 'react';
 import './Projects-pages.css';
-import apiProjectImg from '../assets/api-integration.png';
+import apiProjectImg from '../assets/api-Integration.png';
 
 const APIIntegration = () => {
   return (
@@ -11,7 +11,7 @@ const APIIntegration = () => {
           <h1 className="title">Live Project – API Integration (CareHive Pvt Ltd)</h1>
           <p className="description">
             This live project focuses on real-time location tracking and Aadhaar verification. Collaborating with the CareHive Pvt Ltd development
-            team to ensure seamless API integration, clean architecture, and scalable backend systems.
+            team to ensure seamless AyesPI integration, clean architecture, and scalable backend systems.
           </p>
           <div className="tech-tags">
             <button>PHP</button>

@@ -6,7 +6,7 @@ import ScrollToHash from './components/Hash/Hash';
 
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/projects';
 import Skills from './components/Skills/Skills';
 import Certifications from './components/Certificates/Certificates';
 import Connect from './components/Connect/Connect';

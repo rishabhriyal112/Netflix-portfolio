@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
-import './Connect.css';
+import './connect.css';
 
 const Connect = () => {
   return (

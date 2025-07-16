@@ -5,7 +5,7 @@ import { FaPlay } from 'react-icons/fa';
 import greenGuardImg from '../../assets/green-guard.png';
 import kneeImg from '../../assets/knee-detection.png';
 import toolsHubImg from '../../assets/tools-hub.png';
-import apiProjectImg from '../../assets/api-integration.png';
+import apiProjectImg from '../../assets/api-Integration.png';
 
 const projects = [
   {
